@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -122,4 +122,168 @@ li{
 .hidden {
   display: none;
 }
+ */
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+ul {
+  list-style: none;
+}
+
+body {
+  background-image: url('images/body.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+section {
+  padding: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h1 {
+  text-align: center;
+  color: #07b7e3;
+  font-size: 3rem;
+  margin-bottom: 25px;
+}
+
+.card {
+  background-color: #000;
+  color: white;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Responsive Layout for larger screens */
+@media (min-width: 768px) {
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .text-content {
+    flex-grow: 1;
+    margin-right: 20px;
+  }
+
+  .content img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+  }
+}
+
+/* Responsive Layout for small screens */
+@media (max-width: 767px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-content {
+    margin: 20px 0;
+  }
+
+  .content img {
+    margin-bottom: 20px;
+    height: 120px;
+    width: 120px;
+  }
+}
+
+.text-content h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  border-bottom: 3px solid yellow;
+}
+
+.contact {
+  font-size: 1.2rem;
+}
+
+.button-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1.2rem;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.content-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.content {
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 10px;
+}
+
+h3 {
+  border-right: 2px solid black;
+  padding: 20px;
+  color: hsl(0, 0%, 90%);
+  font-size: 1.5rem;
+}
+
+li {
+  color: hsl(0, 0%, 90%);
+  padding-inline: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive text scaling */
+@media (max-width: 576px) {
+  .container h1 {
+    font-size: 2rem;
+  }
+
+  .text-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+}
