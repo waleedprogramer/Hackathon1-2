@@ -1,129 +1,4 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-ul{
-  list-style: none;
-}
 
-body{
-  background-image: url('images/body.jpg');
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-}
-
-section {
-  padding: 50px;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.container h1 {
-  text-align: center;
-  color: #07b7e3;
-  font-size: 3rem;
-  margin-bottom: 25px;
-}
-
-.card {
-  background-color: #000;
-  color: white;
-  width: 100%;
-  max-width: 800px;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-}
-
-.text-content {
-  flex-grow: 1;
-  margin-right: 20px;
-
-}
-.text-content h2{
-  margin-bottom: 20px;
-  font-size: 2rem;
-  border-bottom: 3px solid yellow;
-}
-.contact{
-  font-size: 1.2rem;
-}
-
-
-
-.img-container {
-  flex-shrink: 0;
-}
-
-.content img {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid white; 
-}
-.button-container {
-  text-align: center;
-  margin: 20px;
-}
-
-.btn {
-  padding: 10px 20px;
-  margin: 10px;
-  font-size: 1.2rem;
-  background-color: #4CAF50;
-  color: white;
-  border-radius: 25px;
-  border: none;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #45a049;
-}
-
-.content-container {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.content {
-  padding: 20px;
-  border: 1px solid #ccc;
-  margin: 10px;
-}
-
-h3{
-  border-right: 2px solid black;
-  padding: 20px;
-  color: hsl(0, 0%, 90%);
-  font-size: 1.5rem;
-}
-li{
-  color: hsl(0, 0%, 90%);
-  padding-inline: 10px;
-
-}
-
-.hidden {
-  display: none;
-}
- */
-/* General styles */
 * {
   margin: 0;
   padding: 0;
@@ -132,6 +7,12 @@ li{
 
 ul {
   list-style: none;
+}
+
+li {
+  color: hsl(0, 0%, 90%);
+  font-wieght:600;
+  padding-inline: 10px;
 }
 
 body {
@@ -208,6 +89,7 @@ section {
   .content img {
     margin-bottom: 20px;
     height: 120px;
+    border-radius: 50%
     width: 120px;
   }
 }
@@ -262,6 +144,7 @@ h3 {
 
 li {
   color: hsl(0, 0%, 90%);
+  font-wieght:600;
   padding-inline: 10px;
 }
 
